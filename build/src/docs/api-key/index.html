@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Использование API Key | developers.ria.com </title>
+
+    <link href="../../stylesheets/init.css" rel="stylesheet"/>
+
+    <!--[if lt IE 9]>
+    <script src="assets/javascripts/ie_lt_9.js"></script><![endif]-->
+    <script src="assets/javascripts/all-9a425a44.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+
+<body>
+<div class="wrapper">
+
+    //= template/header.html
+
+    <main>
+        <section class="container">
+
+
+            <h1 id="api-key-usage">Использование API Key</h1>
+
+            <p>После <a href="/signup">регистрации</a>, Вам на почту будет предоставлен собственный, уникальный API ключ в виде строки из 40 символов. Ваш API ключ:</p>
+
+            <ul class="unstyle list">
+                <li>Уникальный, идентифицирует вас.</li>
+                <li>Предоставляет Вам доступ к веб-сервисам RIA.</li>
+                <li>Полностью приватен, не может передаваться другим лицам.</li>
+            </ul>
+
+            <p>Чтобы использовать свой ключ, просто вставьте его в качестве параметра URL-адреса при создании запросов
+                веб-сервиса. Например:</p>
+
+            <p><code>GET http://developers.ria.com/states?api_key=YOUR_KEY_HERE</code></p>
+
+            <p>Независимо от используемого HTTP метода, API ключ всегда должен передаваться в качестве параметра GET в
+                запросе URL. Таким образом, даже если Вы будете использовать метод POST или PUT для конкретного сервиса,
+                параметр запроса <em>api_key</em> должен всегда указываться в URL запросе.</p>
+
+            <h2 id="alternative-method">Альтернативный Метод</h2>
+
+            <p>В зависимости от того, как Вы будете использовать API, иногда может быть легче передать API ключ в
+                качестве базовой аутентификации HTTP. Если Вы хотите использовать этот метод, отправьте Ваш API ключ в
+                качестве имени пользователя, оставив пароль пустым. Например:</p>
+
+            <p><code>GET http://YOUR_KEY_HERE@developers.ria.com/states</code></p>
+
+
+        </section>
+    </main>
+
+</div>
+
+
+//= template/footer.html
+
+
+</body>
+</html>

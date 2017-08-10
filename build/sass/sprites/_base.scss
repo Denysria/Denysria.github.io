@@ -1,0 +1,73 @@
+$sp-base: (
+    api-key: (
+		offset-x: 0px,
+		offset-y: 0px,
+		width: 60px,
+		height: 60px
+	),
+    area: (
+		offset-x: 0px,
+		offset-y: -96px,
+		width: 21px,
+		height: 33px
+	),
+    auto: (
+		offset-x: -62px,
+		offset-y: -62px,
+		width: 28px,
+		height: 20px
+	),
+    data: (
+		offset-x: -108px,
+		offset-y: 0px,
+		width: 40px,
+		height: 60px
+	),
+    dom: (
+		offset-x: -34px,
+		offset-y: -62px,
+		width: 26px,
+		height: 27px
+	),
+    gear: (
+		offset-x: 0px,
+		offset-y: -62px,
+		width: 32px,
+		height: 32px
+	),
+    location_blue: (
+		offset-x: -23px,
+		offset-y: -96px,
+		width: 20px,
+		height: 30px
+	),
+    location_green: (
+		offset-x: -45px,
+		offset-y: -96px,
+		width: 20px,
+		height: 30px
+	),
+    location_turquoise: (
+		offset-x: -67px,
+		offset-y: -96px,
+		width: 20px,
+		height: 30px
+	),
+    registration: (
+		offset-x: -62px,
+		offset-y: 0px,
+		width: 44px,
+		height: 60px
+	),
+    сastle: (
+		offset-x: -89px,
+		offset-y: -96px,
+		width: 17px,
+		height: 23px
+	),
+);
+
+$sp-base-width: 148px;
+$sp-base-height: 129px;
+$sp-base-image: '../images/icons/base-82edafce23.png';
+$sp-base-image-2x: '../images/icons/base@2x-af7ba93ad9.png';

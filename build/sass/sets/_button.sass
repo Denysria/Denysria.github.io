@@ -1,0 +1,338 @@
+
+/**
+ *   button.css
+ *   Version: 0.1.0
+ *   date modification -none-
+ *   ----------------------------------
+ *   1. 
+ *   
+ */
+.button,
+.button-add,
+.button-primary,
+.button-twitter,
+.button-facebook,
+.button-ok,
+.button-vk,
+.button-youtube,
+.button-gplus,
+input[type="button"],
+input[type="submit"],
+button
+    +button()
+
+.button
+    background: $btn_default__background
+    border-top: 2px solid transparent
+    border-bottom: 2px solid $btn_default__border_bottom
+    +round(5px)
+
+    &:hover
+        text-decoration: none
+        border-bottom-color: $btn_default__hover_border_bottom
+        background-color: $btn_default__hover_background
+
+    &:focus,
+    &:active
+        background-color: $btn_default__focus_background
+        border-bottom-color: $btn_default__focus_border_bottom
+        +transition(all linear 0s)
+
+
+
+    // Grey button
+    &._grey
+        color: inherit
+        background: $btn_grey__background
+        border-bottom-color: $btn_grey__border_bottom
+
+        &:hover
+            background-color: $btn_grey__hover_background
+            border-bottom-color: $btn_grey__hover_border_bottom
+
+        &:focus,
+        &:active
+            background-color: $btn_grey__focus_background
+            border-bottom-color: $btn_grey__focus_border_bottom
+
+    // blue button
+    &._red
+        background: $btn_red__background
+        border-bottom-color: $btn_red__border_bottom
+
+        &:hover
+            background-color: $btn_red__hover_background
+            border-bottom-color: $btn_red__hover_border_bottom
+
+        &:focus,
+        &:active
+            background-color: $btn_red__focus_background
+            border-bottom-color: $btn_red__focus_border_bottom
+
+    // green button
+    &._green
+        background: $btn_green__background
+        border-bottom-color: $btn_green__border_bottom
+
+        &:hover
+            background-color: $btn_green__hover_background
+            border-bottom-color: $btn_green__hover_border_bottom
+
+        &:focus, 
+        &:active
+            background-color: $btn_green__focus_background
+            border-bottom-color: $btn_green__focus_border_bottom
+
+    // pressed button
+    &.pressed
+        background: #d0d0d0 !important
+        border-bottom-color: #bdbcbc !important
+
+
+
+
+    &.i_phone
+        font-size: 22px
+        line-height: 2em
+        +box-sizing()
+
+        .icon-phone-white
+            margin-top: -3px
+
+
+    &.i_mail
+        padding: 4px 0
+        font-size: 15px
+        line-height: 1.2em
+        +box-sizing()
+
+        .icon-mail
+            margin-top: 7px
+            margin-right: 10px
+            display: inline-block
+            vertical-align: top
+
+        span
+            display: inline-block
+
+
+
+.button-add
+    font:
+        size: 18px
+    line-height: 40px
+    padding: 0 15px
+    background: $btn_green__background
+    border: 2px solid transparent
+    border-bottom-color: $btn_green__border_bottom
+    +round(5px)
+
+    &:hover
+        background-color: $btn_green__hover_background
+        border-bottom-color: $btn_green__hover_border_bottom
+
+    &:focus,
+    &:active
+        background-color: $btn_green__focus_background
+        border-bottom-color: $btn_green__focus_border_bottom
+
+
+
+.button-primary, .btn-primary
+    padding: 0 15px
+    background: #219be7
+    border: 2px solid transparent
+    border-bottom-color: #045e96
+    +round(5px)
+
+    &:hover
+        text-decoration: none
+        background: #2ea7f3
+        border-bottom-color: #0b6ba7
+
+    &:focus,
+    &:active
+        background-color: #1d90d8
+        border-bottom-color: #04588c
+        +transition(all linear 0s)
+
+
+
+
+
+
+// BUTTON Social
+
+.button-twitter,
+.button-facebook,
+.button-ok,
+.button-vk,
+.button-youtube,
+.button-gplus
+    border-bottom: 2px solid transparent
+
+    .place-ico
+        border-right: 1px solid transparent
+
+.button-twitter
+    background: #29c5f6
+    border-bottom-color: #15addd
+
+    &:hover
+        background: #15addd
+        border-bottom-color: #15addd
+
+    .place-ico
+        border-right-color: #15addd
+
+
+.button-facebook
+    background: #5270b0
+    border-bottom-color: #405d9c
+
+    &:hover
+        background: #405d9c
+        border-bottom-color: #405d9c
+
+    .place-ico
+        border-right-color: #405d9c
+
+
+.button-ok
+    background: #ff8a00
+    border-bottom-color: #dd7800
+
+    &:hover
+        background: #dd7800
+        border-bottom-color: #dd7800
+
+    .place-ico
+        border-right-color: #dd7800
+
+
+.button-vk
+    background: #1d81b2
+    border-bottom-color: #0f628a
+
+    &:hover
+        background: #0f628a
+        border-bottom-color: #0f628a
+
+    .place-ico
+        border-right-color: #0f628a
+
+
+.button-youtube
+    background: #e82f2f
+    border-bottom-color: #a53838
+
+    &:hover
+        background: #e80001
+        border-bottom-color: #e80001
+
+    .place-ico
+        border-right-color: #a53838
+
+
+.button-gplus
+    background: #db4c4c
+    border-bottom-color: #a53838
+
+    &:hover
+        background: #a53838
+        border-bottom-color: #a53838
+
+    .place-ico
+        border-right-color: #a53838
+
+
+
+[class*="button"]
+
+    &.mini
+        font-size: 11px
+        line-height: 14px
+        padding: .2em .6em
+
+    &.small
+        font-size: 15px
+        line-height: 24px
+
+    &.middle
+        font-size: 14px
+        line-height: 30px
+
+    &.large
+        font-size: 16px
+        line-height: 32px
+
+    //[class^="icon-"]
+    //    position: relative
+    //    vertical-align: baseline
+    //    font-size: 1em
+    //    color: inherit
+
+    &.btn-long
+        white-space: normal
+
+        &.small,
+        &.middle,
+        &.large
+            padding-top: 5px
+            padding-bottom: 5px
+
+        &.mini
+            line-height: 14px
+
+        &.small
+            line-height: 18px
+
+        &.middle
+            line-height: 19px
+
+        &.large
+            line-height: 20px
+
+    &.disabled
+        opacity: 0.5
+        cursor: default
+        +user-select(none)
+
+
+.group-button
+    display: inline-block
+    white-space: nowrap
+
+    .button
+        float: left
+        margin-right: -1px
+        +round(1px)
+
+        &:first-child
+            @include round(3px, left)
+
+        &:last-child
+            @include round(3px, right)
+
+        &:hover
+            position: relative
+
+.btn-blue
+    border: 1px solid #256799
+    padding: 5px 10px
+    display: inline-block
+    line-height: 17px
+    +transition(all 0.2s)
+    +round(3px)
+    +box-sizing()
+
+    &:hover, &:active, &:focus
+        background: #ddf4fb
+
+    &.medium
+        padding: 10px
+
+    &.wide-m
+        width: 100%
+        +mobile_min
+            width: auto

@@ -1,0 +1,57 @@
+//@font-face
+//    +font-face('Lucida', 'LucidaGrande')
+//    font:
+//        family: 'lucida'
+//        weight: normal
+//        style: normal
+
+
+//@font-face
+//    font-family: 'LucidaGrande'
+//    +font-face('Lucida', 'LucidaGrande')
+//    //src: url('../font/Lucida/LucidaGrande.eot?#iefix') format('embedded-opentype'),  url('../font/Lucida/LucidaGrande.woff') format('woff'), url('../font/Lucida/LucidaGrande.ttf')  format('truetype'), url('../font/Lucida/LucidaGrande.svg#../font/Lucida/LucidaGrande') format('svg')
+//    font-weight: normal
+//    font-style: normal
+
+html, body
+    margin: 0
+    padding: 0
+    height: 100%
+    
+
+body
+    font:
+        weight: normal
+        style: normal
+        size: $BaseFontSize
+        family: 'Roboto', sans-serif
+
+    line-height: $BaseLineHeight
+    color: $colorText
+    //min-width: 940px
+    background: $Wallpaper
+    overflow-y: scroll
+
+    //text-rendering: optimizeSpeed        // -> сделает приоритет на максимально быстрый рендеринг. Будут отключены лигатуры и кернинг
+    //text-rendering: optimizeLegibility  -> приведет к разрешению использовать лигатуры и кернинг, а также увеличению времени отрисовки текста.
+    text-rendering: optimizeSpeed
+// -> optimizeLegibility + уделяет большее внимание геометрическим пропорциями букв.
+
+
+
+.container
+    padding-left: 10px
+    padding-right: 10px
+    
+    +mobile_min
+        margin: 0 auto
+        width: 960px
+
+.wrapper
+    min-height: 100%
+    height: auto !important
+    height: 100%
+
+
+
+

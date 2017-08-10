@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Общие Ошибки | developers.ria.com </title>
+
+    <link href="../../stylesheets/init.css" rel="stylesheet" />
+
+    <!--[if lt IE 9]>
+    <script src="assets/javascripts/ie_lt_9.js"></script><![endif]-->
+    <script src="assets/javascripts/all-9a425a44.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-119062-50', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+</head>
+
+<body>
+<div class="wrapper">
+
+    <header class="container">
+        <a href="https://developers.ria.com" class="logo"><i class="icon-gear"></i> RIA.com <span>для разработчиков</span></a>
+        <a href="javascript:void(0);" id="fabe-btn" class="t-cell fade-main-menu" onclick="$('#side-menu').toggleClass('side-open'); $('#fabe-btn').toggleClass('close')"><i class="points"></i></a>
+        <nav class="main-menu" id="side-menu">
+            <a class="item" href="/products">Продукты</a>
+            <a class="item" href="/partners/our_partners/">Партнеры</a>
+            <a class="item" href="/docs">Документация</a>
+            <a class="item" href="/contact">Поддержка</a>
+            <a class="item" href="/company">Компания</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container">
+
+
+            <h1 id="general-web-service-errors">Общие Ошибки Веб-Службы</h1>
+
+            <p>Определенные распространенные ошибки будут возвращены стандартным способом из всех веб-сервисов API RIA.com. Кроме того, некоторые сообщение об ошибках могут быть специфичными для некоторых сервисов (см. документацию для конкретного сервиса). Ниже описаны распространенные ошибки:</p>
+
+            <table border="0" cellpadding="0" cellspacing="0" class="doc-parameters">
+                <thead>
+                <tr>
+                    <th class="doc-parameters-name" scope="col" style="width: 100px;">Error Code</th>
+                    <th class="doc-parameters-name" scope="col" style="width: 100px;">HTTP Status Code</th>
+                    <th class="doc-parameters-required" scope="col">Описание</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th class="doc-parameter-name" scope="row">API_KEY_MISSING</th>
+                    <td class="doc-parameter-name">403</td>
+                    <td class="doc-parameter-description">
+                        API ключ не был указан. Подробнее об
+                        <a href="/docs/api-key/">использовании</a> API ключа см. в разделе “Использование API Key” .
+                    </td>
+                </tr>
+                <tr>
+                    <th class="doc-parameter-name" scope="row">API_KEY_INVALID</th>
+                    <td class="doc-parameter-name">403</td>
+                    <td class="doc-parameter-description">
+                        Был указан неверный ключ API. Убедитесь, что был указан корректный API ключ, или
+                        <a href="/signup/">зарегистрируйтесь</a> для получения ключа.
+                    </td>
+                </tr>
+                <tr>
+                    <th class="doc-parameter-name" scope="row">API_KEY_DISABLED</th>
+                    <td class="doc-parameter-name">403</td>
+                    <td class="doc-parameter-description">
+                        API ключ был отключен администратором. Пожалуйста
+                        <a href="/contact/">свяжитесь с нами</a> для помощи.
+                    </td>
+                </tr>
+                <tr>
+                    <th class="doc-parameter-name" scope="row">API_KEY_UNAUTHORIZED</th>
+                    <td class="doc-parameter-name">403</td>
+                    <td class="doc-parameter-description">
+                        API ключ не авторизован для доступа к данному сервису. Пожалуйста
+                        <a href="/contact/">свяжитесь с нами</a> для помощи.
+                    </td>
+                </tr>
+                <tr>
+                    <th class="doc-parameter-name" scope="row">API_KEY_UNVERIFIED</th>
+                    <td class="doc-parameter-name">403</td>
+                    <td class="doc-parameter-description">
+                        API ключ не подтвержден. Проверьте свою электронную почту для подтверждения API ключа. Пожалуйста
+                        <a href="/contact/">свяжитесь с нами</a> для помощи.
+                    </td>
+                </tr>
+                <tr>
+                    <th class="doc-parameter-name" scope="row">HTTPS_REQUIRED</th>
+                    <td class="doc-parameter-name">400</td>
+                    <td class="doc-parameter-description">
+                        Запросы к этому API должны быть произведены по HTTPS протоколу. Убедитесь, пожалуйста, что Вы используете HTTPS протокол для Вашего запроса.
+
+                    </td>
+                </tr>
+                <tr>
+                    <th class="doc-parameter-name" scope="row">OVER_RATE_LIMIT</th>
+                    <td class="doc-parameter-name">429</td>
+                    <td class="doc-parameter-description">
+                        Превышен лимит запросов для данного API ключа.
+                        <a href="/contact/">Свяжитесь с нами</a> для получения дополнительной информации о
+                        <a href="/docs/rate-limits/"> лимитах веб-сервисов</a> .
+                    </td>
+                </tr>
+                <tr>
+                    <th class="doc-parameter-name" scope="row">NOT_FOUND</th>
+                    <td class="doc-parameter-name">404</td>
+                    <td class="doc-parameter-description">
+                        Не удалось найти API по данному URL-адресу. Проверьте свой URL.
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <h2 id="error-response-body">Error Response Body</h2>
+
+            <p>Ответ об ошибке будет содержать код ошибки из вышеприведенной таблицы и краткое описание ошибки. Описание может быть изменено, поэтому при любой обработке ошибок рекомендуется использовать код статуса HTTP или код ошибки, а не ее описание. </p>
+
+            <h3 id="error-message-response-formats">Форматы Ответов Об Ошибке</h3>
+            <p>В зависимости от обнаруженного формата запроса ответ на сообщение об ошибке может быть возвращен в JSON, XML, CSV или HTML. Запросы неизвестного формата возвращают ошибки в формате JSON.
+            <h4 id="json-example">JSON Example</h4>
+
+            <pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"error"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"API_KEY_MISSING"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"No api_key was supplied. Get one at https://example.com"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+            <h4 id="xml-example">XML Example</h4>
+
+            <pre class="highlight xml"><code><span class="nt">&lt;response&gt;</span>
+  <span class="nt">&lt;error&gt;</span>
+    <span class="nt">&lt;code&gt;</span>API_KEY_MISSING<span class="nt">&lt;/code&gt;</span>
+    <span class="nt">&lt;message&gt;</span>No api_key was supplied. Get one at https://developers.ria.com<span class="nt">&lt;/message&gt;</span>
+  <span class="nt">&lt;/error&gt;</span>
+<span class="nt">&lt;/response&gt;</span>
+</code></pre>
+            <h4 id="csv-example">CSV Example</h4>
+
+            <pre class="highlight plaintext"><code>Error Code,Error Message
+API_KEY_MISSING,No api_key was supplied. Get one at https://developers.ria.com
+</code></pre>
+            <h4 id="html-example">HTML Example</h4>
+
+            <pre class="highlight html"><code><span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>API_KEY_MISSING<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;p&gt;</span>No api_key was supplied. Get one at https://developers.ria.com<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre>
+
+
+        </section>
+    </main>
+
+</div>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="navigation mhide">
+            <nav class="footer-menu">
+                <div class="label">Продукты</div>
+                <ul class="unstyle">
+                    <li class="item"><a href="https://AUTO.RIA.com">AUTO.RIA.com</a></li>
+                    <li class="item"><a href="https://DOM.RIA.com">DOM.RIA.com</a></li>
+                    <li class="item"><a href="https://RIA.com">RIA.com</a></li>
+                </ul>
+            </nav>
+            <nav class="footer-menu">
+                <div class="label">Партнеры</div>
+                <ul class="unstyle">
+                    <li class="item"><a href="/partners/our_partners/">Компании партнеры</a></li>
+                    <li class="item"><a href="/partners/become_our_partner/">Партнерская программа</a></li>
+                </ul>
+            </nav>
+            <nav class="footer-menu">
+                <div class="label">Документация</div>
+                <ul class="unstyle">
+                    <li class="item"><a href="#">Знакомство с API</a></li>
+                    <li class="item"><a href="#">Версии API</a></li>
+                    <li class="item"><a href="#">Методы API</a></li>
+                </ul>
+            </nav>
+            <nav class="footer-menu">
+                <div class="label">Поддержка</div>
+                <ul class="unstyle">
+                    <li class="item"><a href="#">Обратная связь</a></li>
+                    <li class="item"><a href="https://github.com/ria-com/auto-ria-rest-api/issues">Баг-трекер</a></li>
+                    <li class="item"><a href="https://github.com/ria-com/">Официальные сообщества</a></li>
+                </ul>
+            </nav>
+            <nav class="footer-menu">
+                <div class="label">Компания</div>
+                <ul class="unstyle">
+                    <li class="item"><a href="/company">О нас</a></li>
+                    <li class="item"><a href="/company">Чем мы занимаемся</a></li>
+                    <li class="item"><a href="https://developers.ria.com/news/">Новости</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="copyright boxed">
+            <img src="../../images/logo/ria.png" width="60" height="45" alt=""> © 2004-2017 RIA.com. Все права защищены
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

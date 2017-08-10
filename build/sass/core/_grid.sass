@@ -1,0 +1,135 @@
+/*
+ *     GRID 940px !default
+ *     ____________________________________
+ *     This grid for window max-width: 480px
+ *
+ * */
+
+
+
+//.container
+//    width: 960px
+//    padding:
+//        left: 10px
+//        right: 10px
+
+.row
+    margin-bottom: 20px
+
+    &.not-margin
+        margin-bottom: 0
+
+    &:after
+        display: table
+        content: ""
+        clear:   both
+
+.row > [class*="span"]
+    float: left
+
++gridSystem(12, 60px, 20px)
+
+//.row
+//    .span7_
+//        width: 520px
+//
+//        .head
+//            margin-bottom: 12px
+//
+//    .span5_
+//        width: 400px
+
+
+
+
+/*
+ *     GRID 767px
+ *     ____________________________________
+ *     This grid for window max-width: 767px
+ */
+
+
+
+//@media screen and (max-width: 939px)
+//@media screen and (max-width: 955px)
+//@media screen and (max-width: 783px)
+//@media screen and (max-width: 768px)
+
+
++mobile
+    .container
+        width: auto
+        padding:
+            left: 0
+            right: 0
+
+    .row
+        margin: 0
+
+    .row > [class*="span"]
+        float:   none
+        margin:  0 0 20px
+
+    [class*="span"]
+        float:   none
+        display: block
+        width:   auto
+        margin:  0 0 20px
+
+
+    [class*="offset"]
+        float:   none
+        display: block
+        width:   auto
+        margin:  0
+
+
+
+/*
+ *     GRID 768px -> 979px
+ *     _______________________________________
+ *     This grid for window
+ *     min-width : 768px -> max-width : 979px
+ *
+ */
+
+//@media screen and (min-width: 768px) and (max-width: 979px)
+//
+//    .container
+//        width: 724px
+//
+//    +gridSystem(12, 42px, 20px)
+
+
+/*
+ *     GRID 1200px
+ *     _______________________________________
+ *     This grid for window max-width : 1200px
+ */
+
+
+//@media screen and (min-width: 1200px)
+//
+//    .container
+//        width: 1170px
+//
+//    +gridSystem(12, 70px, 30px)
+
+
+input[class*="span"]
+    float:  none
+    margin: 0
+
+select[class*="span"]
+    float:  none
+    margin: 0
+
+button[class*="span"]
+    display:     inline-block
+    float:       none
+    margin-left: 0
+
+
+.button[class*="span"]
+    float:       none
+    margin-left: 0

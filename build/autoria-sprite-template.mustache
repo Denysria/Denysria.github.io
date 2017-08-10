@@ -1,0 +1,19 @@
+{
+	'functions': true
+}
+
+${{spritesheet_name}}: (
+	{{#items}}
+    {{name}}: (
+		offset-x: {{px.offset_x}},
+		offset-y: {{px.offset_y}},
+		width: {{px.width}},
+		height: {{px.height}}
+	),
+	{{/items}}
+);
+
+${{spritesheet_name}}-width: {{spritesheet.px.width}};
+${{spritesheet_name}}-height: {{spritesheet.px.height}};
+${{spritesheet_name}}-image: '../images/icons/{{{spritesheet.escaped_image}}}';
+${{spritesheet_name}}-image-2x: '../images/icons/{{{retina_spritesheet.escaped_image}}}';
